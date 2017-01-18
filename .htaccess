@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+
+RewriteCond %{HTTP_HOST} ^www.keks.mobi$ [NC]
+RewriteRule ^(.*)$ http://keks.mobi/$1 [R=301,L]
+
+Redirect 301 /sex/galleries/ http://pilotka.mobi/gallery/default/
+Redirect 301 /sex/video/ http://pilotka.mobi/shortvideo/default/
+
+Redirect 301 /sex/galleries http://pilotka.mobi/gallery/
+Redirect 301 /sex/video http://pilotka.mobi/shortvideo/
+
+Redirect 301 /sex http://pilotka.mobi/

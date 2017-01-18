@@ -1,6 +1,3 @@
-[submodule "yii"]
-	path = yii
-	url = https://github.com/yiisoft/yii.git
 [submodule "protected/extensions/worker"]
 	path = protected/extensions/worker
 	url = https://github.com/mitallast/yii-gearman.git
